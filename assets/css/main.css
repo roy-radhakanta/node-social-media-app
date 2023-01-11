@@ -1,0 +1,60 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Roboto Mono', monospace;
+    background-color: #a5a5a5;
+}
+
+a{
+    text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin-bottom: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+
+.table-overflow{
+    max-width: 70rem;
+    overflow: auto;
+    margin: auto;
+}
+
+.table thead tr  td{
+font-size: 1.5rem;
+}
+
+.table tr> td,
+.table tr > th{
+min-width: 20rem;
+}
+
+
+

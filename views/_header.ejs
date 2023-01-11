@@ -1,0 +1,16 @@
+<nav class="navbar bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <h2 class="mb-0"><i class="bi bi-cup-hot"></i></h2>
+      <% if(locals.user){ %>
+        <h6 class="text-white mb-2">
+          <i class="bi bi-person-circle"></i> <%= user.name %>
+        </h6>
+        <a href="/user/signout" class="text-white text-decoration-none">
+          <i class="bi bi-box-arrow-right"></i> Signout
+        </a>
+      <% }else{ %>
+
+      <a href="/user/signup" class="text-white text-decoration-none">Signup</a>
+      <% } %>
+    </div>
+  </nav>

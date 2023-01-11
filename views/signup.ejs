@@ -1,0 +1,60 @@
+<div class="auth-form col-md-6 m-auto bg-white mt-3">
+    <h3 class="p-3 text-center bg-secondary text-white"><%= title %></h3>
+  <form
+    action="/user/create"
+    method="POST"
+    class="row g-3 needs-validation p-4"
+    novalidate
+  >
+    <div class="col-md-12">
+      <label for="input0" class="form-label">Name</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text" id="ign">@</span>
+        <input
+          name="name"
+          type="text"
+          class="form-control"
+          id="input0"
+          aria-describedby="ign"
+          required
+        />
+        <div class="invalid-feedback">Please your name</div>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <label for="input1" class="form-label">Email</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text" id="inputgroupemail">@</span>
+        <input
+          name="email"
+          type="email"
+          class="form-control"
+          id="input1"
+          aria-describedby="inputgroupemail"
+          required
+        />
+        <div class="invalid-feedback">Please enter a email</div>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <label for="input2" class="form-label">Password</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text" id="inputgrppassword">*</span>
+        <input
+          name="password"
+          type="password"
+          class="form-control"
+          id="input2"
+          aria-describedby="inputgrppassword"
+          required
+        />
+        <div class="invalid-feedback">Please enter a email</div>
+      </div>
+    </div>
+    <div class="col-12 text-center">
+      <button class="btn btn-primary" type="submit">Signup</button>
+      <br/>
+      Already have an account <a href="/user/signin"> Signin</a>
+    </div>
+  </form>
+</div>
